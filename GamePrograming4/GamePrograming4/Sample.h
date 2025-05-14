@@ -1,82 +1,76 @@
 #pragma once
-
-// int array[100];
-// 1. vector<int> vec;
-
-// 2. template 간단한 코드로 구현해볼 것
-
-
-// vector< > 여러분들이 직접 정의한 클래스를 한번 저장하고, 정렬하고, 출력하는 예제를 한번 만들어보세요.
-// 은행 계좌 
-// 게임에 데이터를 클래스로 표현.
-// vector<<< >>>
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
 
 using namespace std;
 
+/*
+* int array[100];
+* 1. vector<int> vec;
+*
+* 2. template을 사용한 간단한 코드 구현해보기
+*/
+
+// vetcor > 내가 직접 정의한 클래스를 저장하고, 정렬하고, 출력하는 예제 만들기
+// 게임 데이터로 클래스 표현도 가능함
+
 class PocketMonster
 {
 private:
 	int _number;
 	string _name;
-
 public:
 	PocketMonster(int number, string name)
 		: _number(number), _name(name) {
 	}
 
-	int Get_Number() const
+	int GetNumber() const
 	{
 		return _number;
 	}
 
-	string Get_Name() const
+	string GetName() const
 	{
 		return _name;
 	}
 
-	bool operator<(const PocketMonster& other)
+	bool operator<(const PocketMonster& other)	// 비교만 할거기 때문에 const 사용하기
 	{
-		// this->_number : 자신의 도감 번호
-		// other.Get_Number() : 비교 대상의 도감 번호
+		// this->_number : 내가 가지고 있는 도감 번호
+		// other.GetNumber() : 비교 대상의 도감 번호
 
-		return this->_number < other.Get_Number();
+		return this->_number < other.GetNumber();
 
-		//return this->_name.length() < other.Get_Name().length();
 	}
 
 	bool operator>(const PocketMonster& other)
 	{
-		return this->_number > other.Get_Number();
+
+		return this->_number > other.GetNumber();
 	}
 
-};
 
-// 15분.  
+};
 
 class Player
 {
 	vector<PocketMonster> myPocketmon;
 };
 
-
-
 void Example1()
 {
 	PocketMonster 피카츄(25, "피카츄");
-	PocketMonster 아보(23, "아보");
-	PocketMonster 파이리(4, "파이리");
 	PocketMonster 꼬부기(7, "꼬부기");
+	PocketMonster 파이리(5, "파이리");
 	PocketMonster 피죤투(18, "피죤투");
-	PocketMonster 뮤즈(150, "뮤즈");
+	PocketMonster 아보(23, "아보");
+	PocketMonster 피피(36, "피피");
 
-	//cout << "No." << pica.Get_Number() << " " << pica.Get_Name() << endl;
+	//bool result = 꼬부기 < 피카츄;
 
+	cout << "꼬부기가 피카츄보다 번호가 큰가?" << endl;
 
-	cout << "꼬부기가 피카츄 보다 도감 번호가 큰가?" << endl;
 	if (꼬부기 < 피카츄)
 	{
 		cout << "아니오" << endl;
@@ -86,41 +80,44 @@ void Example1()
 		cout << "네" << endl;
 	}
 
-
-	vector<PocketMonster> pocketDatabase;
+	vector<PocketMonster> pocketDataBase;
 
 	// 데이터 입력
 
-	pocketDatabase.push_back(피카츄);
-	pocketDatabase.push_back(아보);
-	pocketDatabase.push_back(파이리);
-	pocketDatabase.push_back(꼬부기);
-	pocketDatabase.push_back(피죤투);
-	pocketDatabase.push_back(뮤즈);
+	pocketDataBase.push_back(피카츄);		// push_back 밀어넣는다? 
+	pocketDataBase.push_back(꼬부기);
+	pocketDataBase.push_back(파이리);
+	pocketDataBase.push_back(피죤투);
+	pocketDataBase.push_back(아보);
+	pocketDataBase.push_back(피피);
 
 	// 데이터 알고리즘 (정렬)
-	sort(pocketDatabase.begin(), pocketDatabase.end());
+	sort(pocketDataBase.begin(), pocketDataBase.end());
 
 	// 데이터 출력
-	for (auto& pocketmon : pocketDatabase)
+	for (auto& pocketMon : pocketDataBase)
 	{
-		cout << "No." << pocketmon.Get_Number() << " " << pocketmon.Get_Name() << endl;
+		cout << "No." << pocketMon.GetNumber() << " " << pocketMon.GetName() << endl;
 	}
 
-	// 데이터 찾기(검색)
-	for (auto& pocketmon : pocketDatabase)
+	// 데이터 찾기 (검색)
+	for (auto& pocketMon : pocketDataBase)
 	{
-		if (pocketmon.Get_Number() == 25)
+		if (pocketMon.GetNumber() == 5)
 		{
-			cout << pocketmon.Get_Number() << "번 몬스터를 찾았다.";
-			cout << "No." << pocketmon.Get_Number() << " " << pocketmon.Get_Name() << endl;
+			cout << pocketMon.GetNumber() << "번 몬스터를 찾았다." << endl;
+			cout << "No." << pocketMon.GetNumber() << " " << pocketMon.GetName() << endl;
 		}
 		else
 		{
-			cout << "못찾았다";
-			cout << "No." << pocketmon.Get_Number() << " " << pocketmon.Get_Name() << endl;
+			cout << "못찾았다." << endl;
+			cout << "No." << pocketMon.GetNumber() << " " << pocketMon.GetName() << endl;
 		}
-
 	}
 
 }
+
+class Cookie
+{
+
+};
