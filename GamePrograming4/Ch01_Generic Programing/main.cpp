@@ -35,9 +35,9 @@
 */
 
 /*
-* 타입 추론 : 컴파일러 앞 뒤 코드를 보고 명시되지 않은 타입을 유추하는 것이다. ?
+* 타입 추론 : 컴파일러의 앞 뒤 코드를 보고 명시되지 않은 타입을 유추하는 것이다. ?
 *
-* auto 이름 = 10;	// auto를 사용하면 대입된 값을 보고 int인지 double인지 유추할 수 있다.
+* auto& 이름 = 10;	// auto를 사용하면 대입된 값을 보고 int인지 double인지 유추할 수 있다.
 *
 * 완벽하게 작동하지는 않는다.
 */
@@ -139,8 +139,8 @@ struct Person
 * 
 * 배열의 장점과 단점
 * 특징 : 크기가 고정되어 있다.
-* 장점 : 정해져 있는 규칙을 문법적으로 제한할 수 있다. 처리 속도가 빠르다?
-* 단점 : 
+* 장점 : 정해져 있는 규칙을 문법적으로 제한할 수 있다. 처리 속도가 빠르다.
+* 단점 : 고정된 크기의 데이터 크기 변경이 어렵다.
 * 
 * 그럼 테런에 자정 12시만 되면 5분렉이라고 있는데 이것도 자료구조랑 관련있나? 그건 아닌거 같은데 ㅇㅅㅇ 얜 서버 문제인듯 
 * 
@@ -186,9 +186,9 @@ class Array
 {
 private:
 	int size = N;
-	int value[N];
+	T value[N];
 public:
-	Person& operator[](int index)	// People 안을 대괄호로 접근할 수 있다. 
+	T& operator[](int index)	// People 안을 대괄호로 접근할 수 있다. 
 	{
 		return value[index];
 	}
@@ -266,9 +266,11 @@ int main()
 	seoul[0] = { 20, "d" };
 	seoul.At(1) = { 21, "r" };
 
+	// 배열 형태의 문법 (syntax)
 	cout << seoul[0].name << endl;
 	cout << seoul[1].name << endl;
 
+	// 배열 클래스 형태의 문법
 	cout << seoul.At(0).name << endl;
 	cout << seoul.At(1).name << endl;
 

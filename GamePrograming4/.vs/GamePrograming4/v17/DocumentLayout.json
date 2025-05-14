@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\",
+  "WorkspaceRootPath": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80D8179F-2FA1-45CE-9FB8-A1D32FBAA65F}|Ch01_Generic Programing\\Ch01_Generic Programing.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch01_Generic Programing\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{80D8179F-2FA1-45CE-9FB8-A1D32FBAA65F}|Ch01_Generic Programing\\Ch01_Generic Programing.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch01_Generic Programing\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{80D8179F-2FA1-45CE-9FB8-A1D32FBAA65F}|Ch01_Generic Programing\\Ch01_Generic Programing.vcxproj|solutionrelative:Ch01_Generic Programing\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -14,17 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch01_Generic Programing\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch01_Generic Programing\\main.cpp",
               "RelativeDocumentMoniker": "Ch01_Generic Programing\\main.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch01_Generic Programing\\main.cpp",
+              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch01_Generic Programing\\main.cpp",
               "RelativeToolTip": "Ch01_Generic Programing\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJYAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAP8AAAAAAAAAAAAkwBUBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-14T07:01:40.559Z",
               "EditorCaption": ""
