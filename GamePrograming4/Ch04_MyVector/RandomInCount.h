@@ -49,13 +49,14 @@ public:
 		huntedMonster.push_back(monster);
 	}
 
-	void Display()
+	void Display() const
 	{
 		cout << "사냥한 몬스터 목록" << endl;
-		int i = 0;
+		int i = 1;
 		for (const auto& monster : huntedMonster)
 		{
 			cout << i << "번째 사냥한 몬스터 : " << monster.name << endl;
+			i++;
 		}
 	}
 

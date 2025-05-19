@@ -79,8 +79,6 @@ public:
 	}
 	void push_back (const T& element)
 	{
-		// capacity < size
-		//size++;
 		if (capacity <= size)
 		{
 			capacity = capacity * 2;
@@ -124,7 +122,6 @@ void Test2()
 	for (int i = 0; i < vec.Size(); i++)
 	{
 		std::cout << vec[i] << " ";
-
 	}
 
 	std::cout << std::endl;
