@@ -1,29 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B631D95-DF6C-45A5-8B5E-4E85B2430174}|Ch03_vector\\Ch03_vector.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch03_vector\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9B631D95-DF6C-45A5-8B5E-4E85B2430174}|Ch03_vector\\Ch03_vector.vcxproj|solutionrelative:Ch03_vector\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{75D88553-9474-4CF3-97E6-27CAC157A1CB}|Ch04_MyVector\\Ch04_MyVector.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\CustomVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D88553-9474-4CF3-97E6-27CAC157A1CB}|Ch04_MyVector\\Ch04_MyVector.vcxproj|solutionrelative:Ch04_MyVector\\CustomVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+      "AbsoluteMoniker": "D:0:0:{75D88553-9474-4CF3-97E6-27CAC157A1CB}|Ch04_MyVector\\Ch04_MyVector.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D88553-9474-4CF3-97E6-27CAC157A1CB}|Ch04_MyVector\\Ch04_MyVector.vcxproj|solutionrelative:Ch04_MyVector\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70C4EE67-3C79-40A9-8257-A1DF351504C2}|Ch02_ConsoleGame_GenericExample\\Ch02_ConsoleGame_GenericExample.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch02_ConsoleGame_GenericExample\\Poketball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70C4EE67-3C79-40A9-8257-A1DF351504C2}|Ch02_ConsoleGame_GenericExample\\Ch02_ConsoleGame_GenericExample.vcxproj|solutionrelative:Ch02_ConsoleGame_GenericExample\\Poketball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70C4EE67-3C79-40A9-8257-A1DF351504C2}|Ch02_ConsoleGame_GenericExample\\Ch02_ConsoleGame_GenericExample.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch02_ConsoleGame_GenericExample\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70C4EE67-3C79-40A9-8257-A1DF351504C2}|Ch02_ConsoleGame_GenericExample\\Ch02_ConsoleGame_GenericExample.vcxproj|solutionrelative:Ch02_ConsoleGame_GenericExample\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{871101F0-F296-465E-801F-7D3FF3714554}|UtilityProject\\UtilityProject.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\UtilityProject\\ConsoleUtility.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{871101F0-F296-465E-801F-7D3FF3714554}|UtilityProject\\UtilityProject.vcxproj|solutionrelative:UtilityProject\\ConsoleUtility.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{871101F0-F296-465E-801F-7D3FF3714554}|UtilityProject\\UtilityProject.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\UtilityProject\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{871101F0-F296-465E-801F-7D3FF3714554}|UtilityProject\\UtilityProject.vcxproj|solutionrelative:UtilityProject\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{75D88553-9474-4CF3-97E6-27CAC157A1CB}|Ch04_MyVector\\Ch04_MyVector.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\RandomInCount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D88553-9474-4CF3-97E6-27CAC157A1CB}|Ch04_MyVector\\Ch04_MyVector.vcxproj|solutionrelative:Ch04_MyVector\\RandomInCount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,86 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "vector",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
-              "ViewState": "AgIAAGkHAAAAAAAAAAAkwHoHAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-16T09:02:40.06Z",
+              "DocumentIndex": 2,
+              "Title": "RandomInCount.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\RandomInCount.h",
+              "RelativeDocumentMoniker": "Ch04_MyVector\\RandomInCount.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\RandomInCount.h",
+              "RelativeToolTip": "Ch04_MyVector\\RandomInCount.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-19T08:15:34.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch03_vector\\main.cpp",
-              "RelativeDocumentMoniker": "Ch03_vector\\main.cpp",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch03_vector\\main.cpp",
-              "RelativeToolTip": "Ch03_vector\\main.cpp",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAkwKgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-16T07:03:05.681Z",
+              "Title": "CustomVector.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\CustomVector.h",
+              "RelativeDocumentMoniker": "Ch04_MyVector\\CustomVector.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\CustomVector.h",
+              "RelativeToolTip": "Ch04_MyVector\\CustomVector.h",
+              "ViewState": "AgIAADkAAAAAAAAAAAAUwJAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-19T07:04:39.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Poketball.h",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch02_ConsoleGame_GenericExample\\Poketball.h",
-              "RelativeDocumentMoniker": "Ch02_ConsoleGame_GenericExample\\Poketball.h",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch02_ConsoleGame_GenericExample\\Poketball.h",
-              "RelativeToolTip": "Ch02_ConsoleGame_GenericExample\\Poketball.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-15T08:05:32.16Z",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\main.cpp",
+              "RelativeDocumentMoniker": "Ch04_MyVector\\main.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\main.cpp",
+              "RelativeToolTip": "Ch04_MyVector\\main.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-19T06:55:31.062Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch02_ConsoleGame_GenericExample\\main.cpp",
-              "RelativeDocumentMoniker": "Ch02_ConsoleGame_GenericExample\\main.cpp",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch02_ConsoleGame_GenericExample\\main.cpp",
-              "RelativeToolTip": "Ch02_ConsoleGame_GenericExample\\main.cpp",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAkwIIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-15T07:15:12.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ConsoleUtility.h",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\UtilityProject\\ConsoleUtility.h",
-              "RelativeDocumentMoniker": "UtilityProject\\ConsoleUtility.h",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\UtilityProject\\ConsoleUtility.h",
-              "RelativeToolTip": "UtilityProject\\ConsoleUtility.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-15T07:08:29.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\UtilityProject\\main.cpp",
-              "RelativeDocumentMoniker": "UtilityProject\\main.cpp",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\UtilityProject\\main.cpp",
-              "RelativeToolTip": "UtilityProject\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-15T07:03:53.668Z"
             }
           ]
         }
