@@ -73,7 +73,7 @@ bool CheckMonster(const Monster& findMon)
 void find_test2()
 {
 	vector<Monster> monsters;
-	monsters.emplace_back(1, "용감한 쿠키");
+	monsters.emplace_back(1, "용감한 쿠키");		// emplace_back은 벡터의 끝에 객체를 직접 만들어서 추가하는 함수
 	monsters.emplace_back(2, "마법사맛 쿠키");
 	monsters.emplace_back(3, "팬케이크맛 쿠키");
 	monsters.emplace_back(4, "커스터드3세맛 쿠키");
