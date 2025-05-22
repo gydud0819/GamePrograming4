@@ -8,7 +8,7 @@
 
 int main()
 {
-	/*Player player(100, 10);
+	Player player(100, 10);
 	Monster monster(80, 5);
 
 	while (player.getHP() > 0 && monster.getHP() > 0)
@@ -20,7 +20,7 @@ int main()
 		}
 	}
 
-	cout << "전투가 종료되었습니다." << endl;*/
+	cout << "전투가 종료되었습니다." << endl;
 
 
 
