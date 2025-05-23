@@ -1,22 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2044E97C-F8ED-42E6-99AC-0F78E067C495}|Ch07_DataLoad\u0026Save\\Ch07_DataLoad\u0026Save.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\DataHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2044E97C-F8ED-42E6-99AC-0F78E067C495}|Ch07_DataLoad\u0026Save\\Ch07_DataLoad\u0026Save.vcxproj|solutionrelative:Ch07_DataLoad\u0026Save\\DataHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{95E4C053-ACE5-4033-BCC3-51936B7E2819}|Ch08_Enum Vector\\Ch08_Enum Vector.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch08_Enum Vector\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95E4C053-ACE5-4033-BCC3-51936B7E2819}|Ch08_Enum Vector\\Ch08_Enum Vector.vcxproj|solutionrelative:Ch08_Enum Vector\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2044E97C-F8ED-42E6-99AC-0F78E067C495}|Ch07_DataLoad\u0026Save\\Ch07_DataLoad\u0026Save.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\GameModel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2044E97C-F8ED-42E6-99AC-0F78E067C495}|Ch07_DataLoad\u0026Save\\Ch07_DataLoad\u0026Save.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\GameModel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2044E97C-F8ED-42E6-99AC-0F78E067C495}|Ch07_DataLoad\u0026Save\\Ch07_DataLoad\u0026Save.vcxproj|solutionrelative:Ch07_DataLoad\u0026Save\\GameModel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2044E97C-F8ED-42E6-99AC-0F78E067C495}|Ch07_DataLoad\u0026Save\\Ch07_DataLoad\u0026Save.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\DropTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2044E97C-F8ED-42E6-99AC-0F78E067C495}|Ch07_DataLoad\u0026Save\\Ch07_DataLoad\u0026Save.vcxproj|solutionrelative:Ch07_DataLoad\u0026Save\\DropTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2044E97C-F8ED-42E6-99AC-0F78E067C495}|Ch07_DataLoad\u0026Save\\Ch07_DataLoad\u0026Save.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2044E97C-F8ED-42E6-99AC-0F78E067C495}|Ch07_DataLoad\u0026Save\\Ch07_DataLoad\u0026Save.vcxproj|solutionrelative:Ch07_DataLoad\u0026Save\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,59 +21,29 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameModel.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\GameModel.h",
+              "RelativeDocumentMoniker": "Ch07_DataLoad\u0026Save\\GameModel.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\GameModel.h",
+              "RelativeToolTip": "Ch07_DataLoad\u0026Save\\GameModel.h",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAwwIMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-23T08:35:44.856Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DataHandler.h",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\DataHandler.h",
-              "RelativeDocumentMoniker": "Ch07_DataLoad\u0026Save\\DataHandler.h",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\DataHandler.h",
-              "RelativeToolTip": "Ch07_DataLoad\u0026Save\\DataHandler.h",
-              "ViewState": "AgIAABUAAAAAAAAAAAAkwCMAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-22T08:10:51.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameModel.h",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\GameModel.h",
-              "RelativeDocumentMoniker": "Ch07_DataLoad\u0026Save\\GameModel.h",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\GameModel.h",
-              "RelativeToolTip": "Ch07_DataLoad\u0026Save\\GameModel.h",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAkwIgAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-22T07:03:02.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DropTable.h",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\DropTable.h",
-              "RelativeDocumentMoniker": "Ch07_DataLoad\u0026Save\\DropTable.h",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\DropTable.h",
-              "RelativeToolTip": "Ch07_DataLoad\u0026Save\\DropTable.h",
-              "ViewState": "AgIAABkAAAAAAAAAAAAkwDYAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-22T07:39:31.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\main.cpp",
-              "RelativeDocumentMoniker": "Ch07_DataLoad\u0026Save\\main.cpp",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch07_DataLoad\u0026Save\\main.cpp",
-              "RelativeToolTip": "Ch07_DataLoad\u0026Save\\main.cpp",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwCgAAAABAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch08_Enum Vector\\main.cpp",
+              "RelativeDocumentMoniker": "Ch08_Enum Vector\\main.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch08_Enum Vector\\main.cpp",
+              "RelativeToolTip": "Ch08_Enum Vector\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-22T07:02:02.375Z",
+              "WhenOpened": "2025-05-23T07:04:18.193Z",
               "EditorCaption": ""
             }
           ]
