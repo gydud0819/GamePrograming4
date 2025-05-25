@@ -28,14 +28,18 @@ int main()
 
 	while (true)
 	{
+		system("cls");
 		player.GetExp(50);
 		player.Show();
+		count++
 		_getch();
 
 		count++;
 		if (count >= 4)
 		{
-
+			break;
 		}
 	}
+
+	player.SaveData("player.txt");
 }

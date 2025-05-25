@@ -5,7 +5,7 @@ using namespace std;
 /*
 * 작성일	: 2025-05-23
 * 작성자	: 박효영
-* 주제	:
+* 주제	: Enum과 Vector
 */
 
 /*
@@ -22,6 +22,8 @@ using namespace std;
 *
 * 배열 형태로 저장되어 있는 자료구조이기 때문에 자료의 삭제 및 추가를 할 때 문제점이 발생할 수 있다.
 * 순서대로 정리되어 있지 않은 데이터의 변경이 발생했을 때 문제가 예상된다.
+* 
+* 
 */
 
 enum Trait
@@ -88,6 +90,7 @@ public:
 		cout << "Damage : " << Stats[Damage] << endl;
 		cout << "Health : " << Stats[Health] << endl;
 		cout << "Mana : " << Stats[Mana] << endl;
+		cout << "Speed : " << Stats[Speed] << endl;
 	}
 
 
@@ -96,7 +99,6 @@ public:
 class Player
 {
 private:
-
 	TraitBonus traitbonus;
 
 public:
@@ -105,30 +107,15 @@ public:
 	TraitBonus GetTrait() const { return traitbonus; }
 
 
-	void GetTraits(Trait trait)
+	void GetTrait(Trait trait)	// Trait을 매개인자로 받아와서 사용한다.
 	{
 		traitbonus.GetTrait(trait);
 	}
 
-	//Player() : stats(4, 0)		// stat의 다음 숫자가 추가 되어야 한다.
-	//{
-	//	stats[static_cast<int>(Stat::Damage)] = 5;		// Stat:: 없이 Damage혼자 못쓰는건가 
-	//	stats[static_cast<int>(Stat::Health)] = 100;		
-	//	stats[static_cast<int>(Stat::Mana)] = 30;		
-
-	//}
-
-	//void IncreaseStat(Stat stat, int amount)	// 스텟을 얼마나 증가시킬건지 
-	//{
-	//	stats[static_cast<int>(stat)] += amount;
-	//}
-
-	//void ShowPlayerStat()
-	//{
-	//	cout << "Damage : "<< stats[Damage] << endl;
-	//	cout << "Health : "<< stats[Health] << endl;
-	//	cout << "Mana : "<< stats[Mana]		<< endl;
-	//}
+	void ShowStatus()
+	{
+		traitbonus.ShowStats();		// trait에 있는 Stat을 보여준다.
+	}
 
 };
 
@@ -172,12 +159,12 @@ void EnumTest1()
 }
 
 // Enum을 vector타입으로 형변환하여 사용하는 예제 함수 
-//void EnumTest2()
-//{
-//	Player player;
-//	player.IncreaseStat(Stat::Damage, 5);		// 플레이어의 공격력 스텟을 5만큼 증가시켜라. 
-//	player.ShowPlayerStat();
-//}
+void EnumTest2()
+{
+	Player player;
+	//player.IncreaseStat(Stat::Damage, 5);		// 플레이어의 공격력 스텟을 5만큼 증가시켜라. 
+	//player.ShowPlayerStat();
+}
 
 void EnumTest3()
 {
@@ -185,7 +172,7 @@ void EnumTest3()
 
 	// enum Trait, enum Stat, int amount 함수가 필요하다.
 	TraitBonus traits;
-	//traits.GetTrait(Trait::Strength);
+	traits.GetTrait(Trait::Strength);
 
 	traits.ShowStats();
 
@@ -193,9 +180,13 @@ void EnumTest3()
 
 void EnumTest4()
 {
-	/*Player player;
-	player.GetTraits().GetTrait(Trait::Strength);
-	player.GetTraits().ShowStats();*/
+	Player player;
+	// player안에 있는 Traitbonus 클래스에 접근하여 함수 사용한다.
+	//player.GetTraits().GetTrait(Trait::Strength);
+	//player.GetTraits().ShowStats();
+
+	player.GetTrait(Trait::Strength);	// player클래스에 Traitbonus 함수를 Wrapping했다. 
+	player.ShowStatus();
 }
 
 int main()
@@ -215,28 +206,17 @@ int main()
 	cout << "숫자를 몇번을 입력했을 때 특성 A를 올린다." << endl;
 	cin >> input;
 
-	if (input > Trait::None)
+	if (input >= Trait::None)
 	{
 		cout << "잘못된 숫자를 입력했다." << endl;
 	}
 	else
 	{
 
-		player.GetTraits(static_cast<Trait>(input));
+		player.GetTrait(static_cast<Trait>(input));
 	}
 
-	//player.
-
-	/*switch (input)
-	{
-	case 0:
-		player.GetTraits(Trait::Strength);
-	case 1:
-		player.GetTraits(Trait::Dexterity);
-	default:
-		break;
-	}*/
-}
+	player.ShowStatus();
 
 // 플레이어 레벨업 시스템 + 스텟 상승 시스템
 // 레벨업을 했을 때 스텟을 상승할 수 있게 만들기

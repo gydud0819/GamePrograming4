@@ -43,7 +43,7 @@ private:
 
 public:
 	Player() : exp(0), Lv(1), maxExp(100) {}
-	Player(int exp, int maxExp, int Lv) : exp(exp), maxExp(maxExp), Lv(Lv) 
+	Player(int exp, int maxExp, int Lv) : exp(exp), maxExp(maxExp), Lv(Lv)
 	{
 		LvTable.emplace_back(1, 100);
 		LvTable.emplace_back(2, 120);
@@ -54,15 +54,8 @@ public:
 		LvTable.emplace_back(7, 220);
 		LvTable.emplace_back(8, 240);
 		LvTable.emplace_back(9, 260);
-		
-	}
 
-	//void LoadExpInTable(int i)
-	//{
-	//	// 1레벨의 데이터를 가져와서 사용한다.
-	//	
-	//	maxExp = LvTable[i].maxExp;
-	//}
+	}
 
 	int GetMaxExpForLv(int Lv)
 	{
@@ -75,12 +68,11 @@ public:
 			}
 		}
 
-		return -1;	// 0을 반환하면 에러로 인식하라는 의미이다. 
+		return -1;	// -1을 반환하면 에러로 인식하라는 의미이다. 
 	}
 
 	void GetExp(int amount)		// 경험치를 획득하면
 	{
-		exp += amount;	// 경험치 수치만큼 더해준다.  
 
 		maxExp = GetMaxExpForLv(Lv);
 
@@ -90,6 +82,7 @@ public:
 			return;		// 예외처리 코드 알림 후 함수를 종료한다. 
 		}
 		
+		exp += amount;	// 경험치 수치만큼 더해준다.  
 		if (exp >= maxExp)	// 레벨의 최대 경험치에 도달했을 때 
 		{
 			Lv++;
@@ -98,7 +91,7 @@ public:
 		}
 	}
 
-	void Show()
+	void Show() const 
 	{
 		cout << "Lv : " << Lv << endl;
 		cout << "Exp : " << exp << endl;
@@ -122,9 +115,9 @@ public:
 	{
 		ifstream file(filename);
 
-		int _Lv, _exp;
+		int _Lv, _exp, _maxExp;
 
-		file >> _Lv >> _exp;
+		file >> _Lv >> _exp >> _maxExp;
 		Lv = _Lv;
 		exp = _exp;
 

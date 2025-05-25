@@ -39,11 +39,13 @@ public:
 		DropTable.emplace_back(8, 80, 100);
 		DropTable.emplace_back(9, 90, 100);
 
+		SetDropItem();
+
 	}	
 
 	void SetDropItem()
 	{
-		int index = ConsoleUtil::GetRandomInt(- 1);
+		int index = ConsoleUtil::GetRandomInt(DropTable.size() - 1);
 	}
 
 	void GetDropPoint()
