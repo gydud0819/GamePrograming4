@@ -2,7 +2,9 @@
 #pragma once
 
 #include <random>
+#include <chrono>
 #include "Windows.h"
+using namespace std;
 
 
 class ConsoleUtil
@@ -20,5 +22,18 @@ public:
 		static std::mt19937 gen(rd()); // Mersenne Twister 엔진
 		std::uniform_int_distribution<> dist(1, max); // 1부터 max까지의 균일한 정수 분포
 		return dist(gen); // 랜
+	}
+
+	static void TimeCheck(void (*Test) ())
+	{
+		auto start = chrono::high_resolution_clock::now();
+
+		// 함수 포인터
+		Test();
+
+		auto end = chrono::high_resolution_clock::now();
+		chrono::duration<double, milli> duration = end - start;
+
+		cout << duration.count() << "ms 시간이 걸렸다." << endl;
 	}
 };
