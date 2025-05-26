@@ -36,4 +36,18 @@ public:
 
 		cout << duration.count() << "ms 시간이 걸렸다." << endl;
 	}
+
+	static void VectorTimeCheck(void (*Test) (vector<int>&))
+	{
+		vector<int> nums;
+		auto start = chrono::high_resolution_clock::now();
+
+		// 함수 포인터
+		Test(nums);
+
+		auto end = chrono::high_resolution_clock::now();
+		chrono::duration<double, milli> duration = end - start;
+
+		cout << duration.count() << "ms 시간이 걸렸다." << endl;
+	}
 };

@@ -127,34 +127,34 @@ void ListExample()
 	cout << *it << endl;
 }
 
-static void VectorExample2(void (*Func) ())
+void VectorExample2(vector<int>& nums)
 {
+	auto Start = chrono::high_resolution_clock::now();
 	vector<int> nums;
 
-	Func();
 
-
-
-	for (int i = 0; i < 1000;i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		nums.push_back(i);
 	}
 	cout << "임의의 데이터에 접근하는 데 걸리는 시간" << endl;
 
-	cout << nums[990] << endl;
-
 	// erase 함수 n번 사용하는 예제 만들어보기 
 	// 함수 포인터 사용하기 
 
+	// 벡터의 중간 삭제 연산
 	for (int i = 0; i < 500; i++)
 	{
 		auto it = nums.begin() + 10;
 		nums.erase(it);
 	}
+	auto End = chrono::high_resolution_clock::now();
+
 }
 
-void ListExample()
+void ListExample2()
 {
+	auto Start = chrono::high_resolution_clock::now();
 	list<int> nums;
 
 	for (int i = 0; i < 1000;i++)
@@ -164,8 +164,14 @@ void ListExample()
 
 	cout << "임의의 데이터에 접근하는 데 걸리는 시간" << endl;
 
-	auto it = next(nums.begin(), 990);
-	cout << *it << endl;
+	// 리스트의 중간 삭제 연산
+	for (int i = 0; i < 1000; i++)
+	{
+		auto it = next(nums.begin(), 550);
+		cout << *it << endl;
+	}
+
+	auto End = chrono::high_resolution_clock::now();
 }
 
 int main()
@@ -183,8 +189,34 @@ int main()
 	// Test();
 
 	// Console::TimeCheck(); 실행 테스트 
-	ConsoleUtil::TimeCheck(VectorExample);
-	ConsoleUtil::TimeCheck(ListExample);
+	// ConsoleUtil::TimeCheck(VectorExample);
+	// ConsoleUtil::TimeCheck(ListExample);
 
 	// double을 반환해서 비교도 할 수 있다. 
+
+	//ConsoleUtil::TimeCheck(VectorExample2);
+	//ConsoleUtil::TimeCheck(ListExample2);
+
+	ConsoleUtil::VectorTimeCheck(VectorExample2);
 }
+
+/*
+* // 삭제 방법을 넘기는 함수
+void RepeatDelete(vector<int>& nums, void (*DelFunc)(vector<int>&)) {
+    for(int i=0; i<500; ++i) DelFunc(nums);
+}
+
+// 실제 삭제 방법
+void DeleteAt10(vector<int>& nums) {
+    nums.erase(nums.begin() + 10);
+}
+
+// 벡터 예제
+void VectorExample2() {
+    vector<int> nums(1000);
+    iota(nums.begin(), nums.end(), 0); // 0~999로 초기화
+
+    RepeatDelete(nums, DeleteAt10);
+}
+
+*/
