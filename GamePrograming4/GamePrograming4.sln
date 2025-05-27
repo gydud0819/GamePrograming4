@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ch08_Enum Vector", "Ch08_En
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ch09_Sequence Container", "Ch09_Sequence Container\Ch09_Sequence Container.vcxproj", "{B3A900C7-4BA8-4633-B18F-FA9E21BBE9C0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ch10_Deque와 함수포인터 활용", "Ch10_Deque와 함수포인터 활용\Ch10_Deque와 함수포인터 활용.vcxproj", "{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{B3A900C7-4BA8-4633-B18F-FA9E21BBE9C0}.Release|x64.Build.0 = Release|x64
 		{B3A900C7-4BA8-4633-B18F-FA9E21BBE9C0}.Release|x86.ActiveCfg = Release|Win32
 		{B3A900C7-4BA8-4633-B18F-FA9E21BBE9C0}.Release|x86.Build.0 = Release|Win32
+		{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}.Debug|x64.ActiveCfg = Debug|x64
+		{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}.Debug|x64.Build.0 = Debug|x64
+		{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}.Debug|x86.ActiveCfg = Debug|Win32
+		{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}.Debug|x86.Build.0 = Debug|Win32
+		{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}.Release|x64.ActiveCfg = Release|x64
+		{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}.Release|x64.Build.0 = Release|x64
+		{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}.Release|x86.ActiveCfg = Release|Win32
+		{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

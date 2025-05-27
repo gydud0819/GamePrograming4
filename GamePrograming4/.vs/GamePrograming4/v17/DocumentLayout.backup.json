@@ -1,34 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3A900C7-4BA8-4633-B18F-FA9E21BBE9C0}|Ch09_Sequence Container\\Ch09_Sequence Container.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch09_Sequence Container\\TimeCheck.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B3A900C7-4BA8-4633-B18F-FA9E21BBE9C0}|Ch09_Sequence Container\\Ch09_Sequence Container.vcxproj|solutionrelative:Ch09_Sequence Container\\TimeCheck.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}|Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\FP2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}|Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9.vcxproj|solutionrelative:Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\FP2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3A900C7-4BA8-4633-B18F-FA9E21BBE9C0}|Ch09_Sequence Container\\Ch09_Sequence Container.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch09_Sequence Container\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B3A900C7-4BA8-4633-B18F-FA9E21BBE9C0}|Ch09_Sequence Container\\Ch09_Sequence Container.vcxproj|solutionrelative:Ch09_Sequence Container\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D88553-9474-4CF3-97E6-27CAC157A1CB}|Ch04_MyVector\\Ch04_MyVector.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\CustomVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D88553-9474-4CF3-97E6-27CAC157A1CB}|Ch04_MyVector\\Ch04_MyVector.vcxproj|solutionrelative:Ch04_MyVector\\CustomVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D88553-9474-4CF3-97E6-27CAC157A1CB}|Ch04_MyVector\\Ch04_MyVector.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\RandomInCount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D88553-9474-4CF3-97E6-27CAC157A1CB}|Ch04_MyVector\\Ch04_MyVector.vcxproj|solutionrelative:Ch04_MyVector\\RandomInCount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D88553-9474-4CF3-97E6-27CAC157A1CB}|Ch04_MyVector\\Ch04_MyVector.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D88553-9474-4CF3-97E6-27CAC157A1CB}|Ch04_MyVector\\Ch04_MyVector.vcxproj|solutionrelative:Ch04_MyVector\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3A900C7-4BA8-4633-B18F-FA9E21BBE9C0}|Ch09_Sequence Container\\Ch09_Sequence Container.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch09_Sequence Container\\FunctionPointer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B3A900C7-4BA8-4633-B18F-FA9E21BBE9C0}|Ch09_Sequence Container\\Ch09_Sequence Container.vcxproj|solutionrelative:Ch09_Sequence Container\\FunctionPointer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{871101F0-F296-465E-801F-7D3FF3714554}|UtilityProject\\UtilityProject.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\UTILITYPROJECT\\CONSOLEUTILITY.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{871101F0-F296-465E-801F-7D3FF3714554}|UtilityProject\\UtilityProject.vcxproj|solutionrelative:UTILITYPROJECT\\CONSOLEUTILITY.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}|Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{76C192D7-33F9-47EB-AFBC-376FE0CC6F2B}|Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9.vcxproj|solutionrelative:Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,100 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomVector.h",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\CustomVector.h",
-              "RelativeDocumentMoniker": "Ch04_MyVector\\CustomVector.h",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\CustomVector.h",
-              "RelativeToolTip": "Ch04_MyVector\\CustomVector.h",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAHAAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FP2.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\FP2.h",
+              "RelativeDocumentMoniker": "Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\FP2.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\FP2.h",
+              "RelativeToolTip": "Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\FP2.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-26T15:21:34.897Z",
+              "WhenOpened": "2025-05-27T07:10:30.04Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RandomInCount.h",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\RandomInCount.h",
-              "RelativeDocumentMoniker": "Ch04_MyVector\\RandomInCount.h",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\RandomInCount.h",
-              "RelativeToolTip": "Ch04_MyVector\\RandomInCount.h",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-26T15:21:22.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\main.cpp",
-              "RelativeDocumentMoniker": "Ch04_MyVector\\main.cpp",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch04_MyVector\\main.cpp",
-              "RelativeToolTip": "Ch04_MyVector\\main.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-26T15:21:17.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ConsoleUtility.h",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\UtilityProject\\ConsoleUtility.h",
-              "RelativeDocumentMoniker": "UtilityProject\\ConsoleUtility.h",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\UtilityProject\\ConsoleUtility.h",
-              "RelativeToolTip": "UtilityProject\\ConsoleUtility.h",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAACcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-26T08:09:04.045Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch09_Sequence Container\\main.cpp",
-              "RelativeDocumentMoniker": "Ch09_Sequence Container\\main.cpp",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch09_Sequence Container\\main.cpp",
-              "RelativeToolTip": "Ch09_Sequence Container\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\main.cpp",
+              "RelativeDocumentMoniker": "Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\main.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\main.cpp",
+              "RelativeToolTip": "Ch10_Deque\uC640 \uD568\uC218\uD3EC\uC778\uD130 \uD65C\uC6A9\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-26T07:05:48.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FunctionPointer.h",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch09_Sequence Container\\FunctionPointer.h",
-              "RelativeDocumentMoniker": "Ch09_Sequence Container\\FunctionPointer.h",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch09_Sequence Container\\FunctionPointer.h",
-              "RelativeToolTip": "Ch09_Sequence Container\\FunctionPointer.h",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-26T07:47:21.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TimeCheck.h",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch09_Sequence Container\\TimeCheck.h",
-              "RelativeDocumentMoniker": "Ch09_Sequence Container\\TimeCheck.h",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch09_Sequence Container\\TimeCheck.h",
-              "RelativeToolTip": "Ch09_Sequence Container\\TimeCheck.h",
-              "ViewState": "AgIAACIAAAAAAAAAAAAowDkAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-26T07:16:53.568Z",
+              "WhenOpened": "2025-05-27T07:04:36.029Z",
               "EditorCaption": ""
             }
           ]
