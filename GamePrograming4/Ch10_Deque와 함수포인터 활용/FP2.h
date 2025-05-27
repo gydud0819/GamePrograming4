@@ -120,7 +120,7 @@ enum RCP // 가위바위보
 
 class RCPGame
 {
-private:
+//private:
 	// 함수포인터 선언하기
 	void (*RCPPlay)();
 
@@ -139,24 +139,6 @@ private:
 		cout << "빠" << endl;
 	}
 	// switch(RCP_TYPE) 각 타입에 맞게 함수포인터의 함수를 넣는 코드 만들기
-public:
-	RCPGame() = default;
-
-	void PlayRock()
-	{
-		RCPPlay = Rock;
-	}
-
-	void PlayScssors()
-	{
-		RCPPlay = Scissors;
-	}
-
-	void PlayPaper()
-	{
-		RCPPlay = Paper;
-	}
-
 	RCP AiRcpType;
 	RCP PlayerType;
 
@@ -169,15 +151,15 @@ public:
 		if (PlayerType == AiRcpType)
 		{
 			cout << "비겼으니까 다시 선택하세용" << endl;
-			
-			StartGame();	// 비기면 이기거나 질때까지 재실행한다.
+
+			//StartGame();	// 비기면 이기거나 질때까지 재실행한다.
 
 		}
 
 		// 유저>AI : 이김
-		else if (PlayerType == ROCK && AiRcpType == SCISSORS ||  
-				PlayerType == SCISSORS && AiRcpType == PAPER ||
-				PlayerType == PAPER && AiRcpType == ROCK)
+		else if (PlayerType == ROCK && AiRcpType == SCISSORS ||
+			PlayerType == SCISSORS && AiRcpType == PAPER ||
+			PlayerType == PAPER && AiRcpType == ROCK)
 		{
 			cout << "이겼지롱." << endl;
 			PlayerScore++;
@@ -188,9 +170,10 @@ public:
 			cout << "졌넹" << endl;
 			AiScore++;
 		}
-		
-	}
 
+	}
+public:
+	RCPGame() : PlayerScore(0), AiScore(0) {}	// 생성자 만들고 0으로 바로 초기화하기
 
 	void StartGame()
 	{
@@ -266,7 +249,7 @@ void FPTest()
 void FPTest2()
 {
 	Actor actor;
-	// actor.의사결졍을 한다.
+	// actor.의사결정을 한다.
 	//actor.ActionMove();
 	actor.Think();
 	actor.Action();
