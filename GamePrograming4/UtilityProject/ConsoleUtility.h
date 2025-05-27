@@ -37,9 +37,10 @@ public:
 		cout << duration.count() << "ms 시간이 걸렸다." << endl;
 	}
 
-	static void VectorTimeCheck(void (*Test) (vector<int>&))
+	template<typename T>
+	static void VectorTimeCheck(void (*Test) (vector<T>&))
 	{
-		vector<int> nums;
+		vector<T> nums;
 		auto start = chrono::high_resolution_clock::now();
 
 		// 함수 포인터

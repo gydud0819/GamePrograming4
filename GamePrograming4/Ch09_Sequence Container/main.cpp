@@ -127,11 +127,13 @@ void ListExample()
 	cout << *it << endl;
 }
 
-void VectorExample2(vector<int>& nums)
+template<typename T>
+void VectorExample2(vector<T>& nums)
 {
 	auto Start = chrono::high_resolution_clock::now();
-	vector<int> nums;
+	vector<T> nums;
 
+	for(auto& num : i)
 
 	for (int i = 0; i < 1000; i++)
 	{
