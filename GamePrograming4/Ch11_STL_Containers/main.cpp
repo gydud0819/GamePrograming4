@@ -191,7 +191,7 @@ void Test2_2()
 	cout << "deque의 시간 : ";
 	ConsoleUtil::TimeCheck(FrontPushByDeque);
 
-	cout << "결과 : 첫번째 원소를 넣는 경우에는 deque가 빠를 수 있으며 vector의 장점과 단점을 해결할 수 있다." << endl;
+	cout << "결과 : 첫번째 원소를 넣는 경우에는 deque가 빠를 수 있으며 vector의 앞부분 삽입(삭제) 단점을 해결할 수 있다." << endl;
 	cout << endl;
 }
 #pragma endregion
@@ -314,7 +314,7 @@ void FindByVector()
 		cout << num << " ";
 	}
 
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 100; i++)	// 검색 기능 속도 비교
 	{
 		auto it = find(nums.begin(), nums.end(), 5);
 		
@@ -335,7 +335,7 @@ void FindByList()
 		cout << num << " ";
 	}
 
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 100; i++)
 	{
 		auto it = find(nums.begin(), nums.end(), 5);
 		
@@ -356,7 +356,7 @@ void FindByDeque()
 		cout << num << " ";
 	}
 
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 100; i++)
 	{
 		auto it = find(nums.begin(), nums.end(), 5);
 		
@@ -373,8 +373,8 @@ void FindBySet()
 
 	}
 
-	nums.insert(100);
-	nums.insert(50);
+	//nums.insert(100);
+	//nums.insert(50);
 
 	//nums.insert(1);
 
@@ -383,7 +383,7 @@ void FindBySet()
 		cout << num << " ";
 	}
 
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 100; i++)
 	{
 
 		nums.find(i);
