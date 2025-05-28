@@ -199,7 +199,7 @@ int main()
 	//ConsoleUtil::TimeCheck(VectorExample2);
 	//ConsoleUtil::TimeCheck(ListExample2);
 
-	ConsoleUtil::VectorTimeCheck(VectorExample2);
+	//ConsoleUtil::VectorTimeCheck(VectorExample2);
 }
 
 /*
