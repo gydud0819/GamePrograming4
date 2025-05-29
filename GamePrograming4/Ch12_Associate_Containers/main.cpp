@@ -32,27 +32,28 @@ void Test1()
 	nums.insert(5);
 	nums.insert(1);
 
+	cout << "특징1. set의 데이터가 자동으로 정렬된다." << endl;
 	for (const auto& num : nums)
 	{
-		cout << num << endl;	// 1,2,3,5,8 오름차순으로 출력된다. 
+		cout << num << " ";	// 1,2,3,5,8 오름차순으로 출력된다. 
 	}
+	cout << endl;
 
-	//cout << "특징1. set의 데이터가 자동으로 정렬된다." << endl;
-	//// set 특징
-	//// 중복이 되지 않는다. (집합)
-	//// 데이터가 자동으로 정렬된다.
-	//nums.insert(3);
-	//nums.insert(2);
-	//nums.insert(8);
-	//nums.insert(5);
-	//nums.insert(1);
+	// set 특징
+	// 중복이 되지 않는다. (집합)
+	// 데이터가 자동으로 정렬된다.
+	nums.insert(3);
+	nums.insert(2);
+	nums.insert(8);
+	nums.insert(5);
+	nums.insert(1);
 
-	//cout << "특징2. set의 데이터는 중복이 되지 않는다." << endl;
-	//for (const auto& num : nums)
-	//{
-	//	cout << num << " ";
-	//}
-	//cout << endl;
+	cout << "특징2. set의 데이터는 중복이 되지 않는다." << endl;
+	for (const auto& num : nums)
+	{
+		cout << num << " ";
+	}
+	cout << endl;
 
 }
 
@@ -84,13 +85,13 @@ void Test2()
 	nums.insert(5);
 	nums.insert(1);
 
-	cout << "특징2. set의 데이터는 중복이 되지 않는다." << endl;
+	cout << "특징2. MultiSet의 데이터는 중복이 되지 않는다." << endl;
 	for (const auto& num : nums)
 	{
 		cout << num << " ";
 	}
 	cout << endl;
-	cout << "연관 컨테이너 앞에 특정 키워드를 붙이면 성질이 변한다." << endl;
+	//cout << "연관 컨테이너 앞에 특정 키워드를 붙이면 성질이 변한다." << endl;
 
 }
 #pragma endregion
@@ -252,26 +253,30 @@ class Shop
 {
 	map<int, NewItem> items;
 	// 1. 타입<int, NewItem, items> 컨테이너 선언하기
+public:
 	Shop()
 	{
 		// 2. 5개의 상점 
 		//NewItem("팬던트", 20, 30);
 		items.insert({ 1, NewItem("팬던트", 20, 300) });
 		items.insert({ 2, NewItem("크라운", 10, 500) });
-		items.insert({ 3, NewItem("팔찌", 20, 430) });
-		items.insert({ 4, NewItem("부츠", 20, 530) });
+		items.insert({ 3, NewItem("팔찌", 5, 430) });
+		items.insert({ 4, NewItem("부츠", 15, 530) });
 		items.insert({ 5 , NewItem("반지", 5, 250) });
 	}
 
 	void ShopItem()
 	{
-		for (const auto& item : items)
-		{
-
-		}
 
 		cout << left;
-		cout << setw(10) << "ID" << setw(20) << "이름" << endl;
+		cout << setw(10) << "ID" << setw(10) << "이름" <<
+			setw(10) << "공격력" << setw(10) << "가격" << endl;
+		for (const auto& item : items)
+		{
+			cout << left;
+			cout << setw(10) << item.first << setw(10) << item.second.name <<
+				setw(10) << item.second.ATK << setw(10) << item.second.price << endl;
+		}
 			// 1. Item 데이터 만들기
 			// 2. 정의한 데이터를 사용할 클래스 만들기
 			// 3. Shop 클래스 안에 map 자료구조 추가하기
@@ -285,6 +290,16 @@ class Shop
 	}
 };
 
+void ShowTest()
+{
+	cout << endl;
+	cout << "상점 기능 테스트" << endl;
+	cout << endl;
+
+	Shop shop1;
+	shop1.ShopItem();
+}
+
 #pragma endregion
 
 
@@ -295,4 +310,6 @@ int main()
 	Test3();
 	Test4();
 	Test5();
+
+	ShowTest();
 }
