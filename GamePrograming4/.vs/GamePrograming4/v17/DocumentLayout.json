@@ -1,53 +1,64 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29D9779F-ECF5-432E-86DA-0EB5321910A8}|Ch12_Associate_Containers\\Ch12_Associate_Containers.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch12_Associate_Containers\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29D9779F-ECF5-432E-86DA-0EB5321910A8}|Ch12_Associate_Containers\\Ch12_Associate_Containers.vcxproj|solutionrelative:Ch12_Associate_Containers\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{7403BD13-CEFA-4A02-A8F6-DAFD7D625FFF}|Ch13_ShopNPC\\Ch13_ShopNPC.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch13_ShopNPC\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7403BD13-CEFA-4A02-A8F6-DAFD7D625FFF}|Ch13_ShopNPC\\Ch13_ShopNPC.vcxproj|solutionrelative:Ch13_ShopNPC\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B13F0E9-F935-4544-936C-C78EF9C306EF}|Ch11_STL_Containers\\Ch11_STL_Containers.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch11_STL_Containers\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5B13F0E9-F935-4544-936C-C78EF9C306EF}|Ch11_STL_Containers\\Ch11_STL_Containers.vcxproj|solutionrelative:Ch11_STL_Containers\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{7403BD13-CEFA-4A02-A8F6-DAFD7D625FFF}|Ch13_ShopNPC\\Ch13_ShopNPC.vcxproj|C:\\USERS\\ADMINISTRATOR\\DESKTOP\\GAMEPROGRAMING4\\GAMEPROGRAMING4\\UTILITYPROJECT\\CONSOLEUTILITY.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7403BD13-CEFA-4A02-A8F6-DAFD7D625FFF}|Ch13_ShopNPC\\Ch13_ShopNPC.vcxproj|solutionrelative:UTILITYPROJECT\\CONSOLEUTILITY.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedHeight": 200,
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsoleUtility.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\UtilityProject\\ConsoleUtility.h",
+              "RelativeDocumentMoniker": "UtilityProject\\ConsoleUtility.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\UtilityProject\\ConsoleUtility.h",
+              "RelativeToolTip": "UtilityProject\\ConsoleUtility.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-30T07:08:06.454Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch12_Associate_Containers\\main.cpp",
-              "RelativeDocumentMoniker": "Ch12_Associate_Containers\\main.cpp",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch12_Associate_Containers\\main.cpp",
-              "RelativeToolTip": "Ch12_Associate_Containers\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMAAAASAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch13_ShopNPC\\main.cpp",
+              "RelativeDocumentMoniker": "Ch13_ShopNPC\\main.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming4\\GamePrograming4\\Ch13_ShopNPC\\main.cpp",
+              "RelativeToolTip": "Ch13_ShopNPC\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-29T07:00:38.609Z",
+              "WhenOpened": "2025-05-30T07:02:27.149Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch11_STL_Containers\\main.cpp",
-              "RelativeDocumentMoniker": "Ch11_STL_Containers\\main.cpp",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming4\\GamePrograming4\\Ch11_STL_Containers\\main.cpp",
-              "RelativeToolTip": "Ch11_STL_Containers\\main.cpp",
-              "ViewState": "AgIAAFwBAAAAAAAAAAAAAHkBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-28T07:00:49.823Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
