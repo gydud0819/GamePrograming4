@@ -14,6 +14,8 @@
 #include <iomanip>		// 입출력 조작 헤더
 #include <utility>		// pair 클래스가 정의되어 있는 헤더파일 
 
+#include <string>
+
 const int total_width = 60;			// 전체
 const int field1_width = 30;		// 이름 길이
 const int fieldl2_width = 15;		// 가격
@@ -44,12 +46,12 @@ private:
 public:
 	Shop()	// 데이터를 초기화 한다. 
 	{
-		items.insert({ 0, Item("상의", 1000, "장비") });
-		items.insert(make_pair(1, Item("하의", 1500, "장비")));
-		pair<int, Item> p1(2, Item("신발", 500, "장비"));
+		items.insert({ 0, Item("다이아몬드", 10000, "보석함") });
+		items.insert(make_pair(1, Item("루비", 5000, "보석함")));
+		pair<int, Item> p1(2, Item("사파이어", 5500, "보석함"));
 		items.insert(p1);
-		items.insert({ 3, Item("장갑", 1000, "장비") });
-		items.insert({ 4, Item("투구", 5000, "장비") });
+		items.insert({ 3, Item("금", 1000, "보석함") });
+		items.insert({ 4, Item("은", 500, "보석함") });
 	}
 
 	Shop(string filename)
@@ -78,7 +80,7 @@ public:
 		while (!in_file.eof())	// end of file(파일의 끝에 도달했을 때 true를 반환한다.)
 		{
 			in_file >> name >> price >> type;		//	 메모장으로부터 읽어온다. 파일에서 name, price, type 순으로 읽는다.
-			items.insert({ 0, Item(name, price, type) });	// map 자료구조에 저장한다.
+			items.insert({ index, Item(name, price, type) });	// map 자료구조에 저장한다.
 			index++;										// 다음 index로 넘어간다. 
 		}
 
@@ -103,9 +105,9 @@ public:
 
 		for (int i = 0; i < items.size(); i++)	// 인덱스 기반 접근이 가능한 자료구조여야 사용할 수 있다. (vector, map 등)
 		{
-			out_file << setw(field1_width) << left << "이름" << items[i].name	// 연산자 오버로딩을 사용한 것 
-				<< setw(fieldl2_width) << right << "가격" << items[i].price
-				<< setw(fieldl3_width) << right << "타입" << items[i].type
+			out_file << setw(field1_width) << left  << items[i].name	// 연산자 오버로딩을 사용한 것 
+				<< setw(fieldl2_width) << right  << items[i].price
+				<< setw(fieldl3_width) << right  << items[i].type
 				<< endl;
 
 		}
@@ -129,7 +131,7 @@ public:
 		// 라인을 긋는 코드
 		cout << setw(total_width)						// 길이 설정	
 			<< setfill('-')								// 공백을 '-'로 설정한다. setfill : 공백문자를.......
-			<< " " << endl;
+			<< "" << endl;
 
 		cout << setfill(' ');
 
@@ -169,6 +171,11 @@ public:
 		shop = Shop(filename);
 	}
 
+	void changeItemList(string filename)
+	{
+		shop = Shop(filename);
+	}
+
 	void ShowItems()
 	{
 		shop.ShowItems();
@@ -185,7 +192,7 @@ void Interact(int x1, int y1, NPC& npc)	// Player와 NPC 클래스를 만들어서 넣을수
 {
 	if (x1 == npc.posX && y1 == npc.posY)
 	{
-		
+		npc.ShowItems();
 	}
 }
 
@@ -223,6 +230,8 @@ int main()
 	NPC npc1("shop1.txt", 3,5);
 	NPC npc2("shop2.txt", 10,9);
 	NPC npc3("shop3.txt", 7,1);
+
+	Shop shop;
 	
 	//shop.SaveShopData("shop1.txt");
 	//shop.SaveShopData("shop2.txt");
