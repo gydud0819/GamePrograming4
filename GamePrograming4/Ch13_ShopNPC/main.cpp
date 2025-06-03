@@ -13,6 +13,7 @@
 #include <fstream>		// ifstream, ofstrem 인아웃 함수 사용 가능하다.
 #include <iomanip>		// 입출력 조작 헤더
 #include <utility>		// pair 클래스가 정의되어 있는 헤더파일 
+#include <unordered_map>	// 인벤토리를 위한 자료구조
 
 #include <string>
 
@@ -35,18 +36,92 @@ public:
 public:
 	Item() = default;
 	Item(string name, int price, string type) : name(name), price(price), type(type) {}
+	virtual void Use() = 0;		// 순수 가상 함수 : Item을 상속하는 클래스가 이 함수를 구현하기 ? 
+};
+
+class Weapon : public Item
+{
+public:
+	Weapon(string name, int price, string type) : Item(name, price, type) {}
+
+	void Use() override
+	{
+		cout << "무기를 사용한다." << endl;
+	}
+};
+
+/// <summary>
+/// 아이템을 사용했을 때 사라지는 종류의 아이템
+/// Player클래스의 RemoveItem을 사용해라.
+/// </summary>
+class UsableItem : public Item
+{
+public:
+	UsableItem(string name, int price, string type) : Item(name, price, type) {}
+
+	void Use() override
+	{
+		cout << "소비성 아이템을 사용한다." << endl;
+		// 사용한 아이템 호출하기 RemoveItem을 사용해서
+	}
 };
 
 #pragma region Player 코드
 class Player
 {
+private:
+	unordered_map<string, Item*> inventory;	// Item을 아이템을 이름으로 찾는 컨테이너
 public:
 	int posX;
 	int posY;
 	int money;
 
+#pragma region 인벤토리 코드
 	// 플레이어가 소유한 인벤토리를 자료구조를 하나 선택하여 자료구조에 구매한 아이템을 저장하기
-	// 저장한 자료구조를 사용하는 함수 만들기 
+	// 저장한 자료구조를 사용하는 함수 만들기 (2025-06-03) 추가
+
+	void GetItem(Item* item)
+	{
+		inventory.insert({ item->name, item });
+	}
+
+	void RemoveItem(string name)
+	{
+		// 제거할 수 없을 때는 find를 사용하여 
+
+		if (inventory.find(name) != inventory.end())	// 컨테이너 데이터가 존재할 때만 실행하기
+		{
+			inventory.erase(name);
+		}
+		else
+		{
+			cout << "인벤토리에 해당하는 아이템이 없다." << endl;
+		}
+
+	}
+
+	void RemoveItem(Item* item)
+	{
+		inventory.erase(item->name);
+	}
+
+	// 특정 키를 눌렀을 때(게임 입력 Player Input)
+
+	void Use(Item* item)
+	{
+		// 소비 아이템 -> 적용
+		// 장비 아이템 -> 장비 장착해야함
+
+		item->Use();
+	}
+
+#pragma endregion
+	/*
+	* 상점은 전부다 아이템을 팔아야한다.
+	* 해당 아이템을 같은함수 Use() 같고 있지만 다른 기능으로 사용하고 싶을 때(클래스의 다형성 적용하기)
+	* item을 주소로 받아오면 다형성을 사용할 수 있다.
+	*/
+
 
 	Player() = default;
 	Player(int posX, int posY, int money) : posX(posX), posY(posY), money(money) {}
@@ -59,8 +134,15 @@ public:
 		cout << "플레이어의 정보";
 		ConsoleUtil::GotoXY(80, 1);
 		cout << "플레이어의 현재 보유중인 머니 : " << money;
+		ConsoleUtil::GotoXY(80, 2);
+		cout << "소유한 아이템 목록 : ,";
+		ConsoleUtil::GotoXY(80, 3);
+		for (const auto& item : inventory)
+		{
+			cout << item.first << " ";
+		}
 
-		// 보유한 아이템 띄윅 
+		// 보유한 아이템 띄우기
 	}
 
 	void BuyItem(Item& item)
@@ -86,17 +168,22 @@ public:
 class Shop
 {
 private:
+	/*
+	* Item 추상 클래스를 만들면 item 자체를 클래스로 생성할 수 없다. (인스턴스)
+	* 주소로 받아와야 하는ㄷ , enum 타입에 따라 클래스를 다르게 사용할 수 있도록 코드를 작성해야한다.
+	* "팩토리 패턴" 팩토리 클래스를 만들어서
+	*/
 	// vector, list, deque, set, map 
-	map<int, Item> items;			// 자료구조 클래스를 보관한다. 
+	map<int, Item*> items;			// 자료구조 클래스를 보관한다. 
 public:
 	Shop()	// 데이터를 초기화 한다. 
 	{
-		items.insert({ 0, Item("다이아몬드", 10000, "보석함") });
-		items.insert(make_pair(1, Item("루비", 5000, "보석함")));
-		pair<int, Item> p1(2, Item("사파이어", 5500, "보석함"));
+		items.insert({ 0, new Weapon("다이아몬드", 10000, "보석함") });	// 동적할당 주소로 받아옴
+		items.insert(make_pair(1, new Weapon("루비", 5000, "보석함")));
+		pair<int, Item*> p1(2, new Weapon("사파이어", 5500, "보석함"));
 		items.insert(p1);
-		items.insert({ 3, Item("금", 1000, "보석함") });
-		items.insert({ 4, Item("은", 500, "보석함") });
+		items.insert({ 3, new Weapon("금", 1000, "보석함") });
+		items.insert({ 4, new Weapon("은", 500, "보석함") });
 	}
 
 	Shop(string filename)
@@ -125,8 +212,25 @@ public:
 		while (!in_file.eof())	// end of file(파일의 끝에 도달했을 때 true를 반환한다.)
 		{
 			in_file >> name >> price >> type;		//	 메모장으로부터 읽어온다. 파일에서 name, price, type 순으로 읽는다.
-			items.insert({ index, Item(name, price, type) });	// map 자료구조에 저장한다.
-			index++;										// 다음 index로 넘어간다. 
+
+			if (type == "보석함")
+			{
+				items.insert({ index, new Weapon(name, price, type) });	// map 자료구조에 저장한다.
+				index++;										// 다음 index로 넘어간다. 
+
+			}
+			//else if (type == "악세사리")
+			//{
+			//	items.insert({ index, new Weapon(name, price, type) });	// map 자료구조에 저장한다.
+			//	index++;
+			//}
+			else
+			{
+				items.insert({ index, new Weapon(name, price, type) });	// map 자료구조에 저장한다.
+				index++;
+			}
+
+
 		}
 
 		in_file.close();
@@ -150,9 +254,9 @@ public:
 
 		for (int i = 0; i < items.size(); i++)	// 인덱스 기반 접근이 가능한 자료구조여야 사용할 수 있다. (vector, map 등)
 		{
-			out_file << setw(field1_width) << left << items[i].name	// 연산자 오버로딩을 사용한 것 
-				<< setw(field2_width) << right << items[i].price
-				<< setw(field3_width) << right << items[i].type
+			out_file << setw(field1_width) << left << items[i]->name	// 연산자 오버로딩을 사용한 것 
+				<< setw(field2_width) << right << items[i]->price
+				<< setw(field3_width) << right << items[i]->type
 				<< endl;
 
 		}
@@ -186,9 +290,9 @@ public:
 		for (int i = 0; i < items.size(); i++)	// 인덱스 기반 접근이 가능한 자료구조여야 사용할 수 있다. (vector, map 등)
 		{
 			ConsoleUtil::GotoXY(x, y + 2 + i);
-			cout << setw(field1_width) << left << items[i].name	// 연산자 오버로딩을 사용한 것 
-				<< setw(field2_width) << right << items[i].price
-				<< setw(field3_width) << right << items[i].type
+			cout << setw(field1_width) << left << items[i]->name	// 연산자 오버로딩을 사용한 것 
+				<< setw(field2_width) << right << items[i]->price
+				<< setw(field3_width) << right << items[i]->type
 				<< endl;
 
 		}
@@ -203,8 +307,8 @@ public:
 	{
 		if (items.find(index) != items.end())	// 아이템을 찾으면
 		{
-			Item itemInstance = items[index];
-			if (player.money >= itemInstance.price)	// 유저 돈이 충분할 때
+			Item* itemInstance = items[index];
+			if (player.money >= itemInstance->price)	// 유저 돈이 충분할 때
 			{
 				player.BuyItem(itemInstance);
 				return true;
@@ -276,7 +380,7 @@ public:
 		cout << "#";
 	}
 
-	
+
 };
 
 
