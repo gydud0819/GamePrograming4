@@ -66,8 +66,8 @@ public:
 	}
 };
 
-#pragma region Player 코드
-class Player
+#pragma region Player 코드		
+class Player				// 2025-06-02 추가
 {
 private:
 	unordered_map<string, Item*> inventory;	// Item을 아이템을 이름으로 찾는 컨테이너
@@ -135,7 +135,7 @@ public:
 		ConsoleUtil::GotoXY(80, 1);
 		cout << "플레이어의 현재 보유중인 머니 : " << money;
 		ConsoleUtil::GotoXY(80, 2);
-		cout << "소유한 아이템 목록 : ,";
+		cout << "소유한 아이템 목록 : ";
 		ConsoleUtil::GotoXY(80, 3);
 		for (const auto& item : inventory)
 		{
@@ -145,9 +145,11 @@ public:
 		// 보유한 아이템 띄우기
 	}
 
-	void BuyItem(Item& item)
+	void BuyItem(Item* item)
 	{
-		money -= item.price;
+		money -= item->price;
+		GetItem(item);
+		Use(item);
 
 		// map.insert({ 숫자, item});		// 아이템 이름으로 검색할 수 있게 map(string, item)
 	}
@@ -307,7 +309,7 @@ public:
 	{
 		if (items.find(index) != items.end())	// 아이템을 찾으면
 		{
-			Item* itemInstance = items[index];
+			Item *itemInstance = items[index];
 			if (player.money >= itemInstance->price)	// 유저 돈이 충분할 때
 			{
 				player.BuyItem(*itemInstance);
