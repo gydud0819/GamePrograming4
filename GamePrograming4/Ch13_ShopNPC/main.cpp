@@ -312,7 +312,7 @@ public:
 			Item *itemInstance = items[index];
 			if (player.money >= itemInstance->price)	// 유저 돈이 충분할 때
 			{
-				player.BuyItem(*itemInstance);
+				player.BuyItem(itemInstance);
 				return true;
 
 			}
